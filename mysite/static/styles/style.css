@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  margin: 0;
+}
+.col-1 {
+  background: #448AFF;
+  flex: 0;
+  font-family: 'Rubik Mono One', sans-serif;
+  padding: 1em;
+  font-size: 21px;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  background-color: #B3E5FC;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+}
+.content > article {
+  flex: 4;
+  min-height: 60vh;
+}
+header, footer {
+  background: #03A9F4;
+  height: 10vh;
+}
+header, footer, article {
+  padding: 0.5em;
+}
+
+header {
+  font-size: 40px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.row {
+  padding-right: 30%;
+}
+
+.column {
+  padding: 1em;
+}

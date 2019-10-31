@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <header>
+      regestration
+    </header>
+
+    <main class="content">
+    <div class="row">
+
+      <form action="" method="post" novalidate>
+          {{ form.hidden_tag() }}
+          <p>
+              {{ form.Username.label }}<br>
+              {{ form.Username(size=32) }}
+              {% for error in form.Username.errors %}
+              <span style="color : red;">[{{error}}]</span>
+              {% endfor %}
+          </p>
+
+          <p>
+              {{ form.Emailenter.label }}<br>
+              {{ form.Emailenter(size=32) }}
+              {% for error in form.Emailenter.errors %}
+              <span style="color : red;">[{{error}}]</span>
+              {% endfor %}
+          </p>
+
+          <p>
+              {{ form.Password.label }}</br>
+              {{ form.Password(size=32) }}
+              {% for error in form.Password.errors %}
+              <span style="color : red;">[{{error}}]</span>
+              {% endfor %}
+          </p>
+
+          <p>
+              {{ form.Passwordcheck.label }}</br>
+              {{ form.Passwordcheck(size=32) }}
+              {% for error in form.Passwordcheck.errors %}
+              <span style="color : red;">[{{error}}]</span>
+              {% endfor %}
+          </p>
+
+
+          <p> {{ form.submit() }}</p>
+      </form>
+
+    </div>
+    </main>
+
+{% endblock %}
